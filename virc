@@ -1,0 +1,43 @@
+"
+" Disable compatibility with vi which can cause unexpected issues.
+set nocompatible
+
+" Highlight cursor line underneath the cursor horizontally.
+set cursorline
+
+" Highlight cursor line underneath the cursor vertically.
+set cursorcolumn
+
+" Control Tabulation and Temporarily relace leading spaces with dots
+set ts=8 sw=8 sts=8 expandtab
+set list listchars=trail:.
+
+" Suppress .viminfo file
+set viminfofile=NONE
+
+" Create Backups
+set backup
+set writebackup
+
+" Backup and Swap Placement
+set backupdir=/root/vim-TMP//
+set directory=/root/vim-TMP//
+
+" Display Line Numbers and Title
+set number
+set title
+
+augroup python
+        autocmd!
+        autocmd FileType python,doctest setlocal autoindent ts=4 sw=4 sts=4 et
+augroup END
+
+augroup yaml
+        autocmd!
+        autocmd FileType yaml,yml setlocal autoindent ts=2 sw=2 sts=2 et
+augroup END
+
+augroup xml
+        autocmd!
+        autocmd FileType xml,xml setlocal autoindent ts=4 sw=4 sts=4 et
+augroup END

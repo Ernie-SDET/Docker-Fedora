@@ -1,0 +1,863 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.0, pytest-7.4.3, pluggy-1.3.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /
+collecting ... collected 115 items
+
+test_pyfuncs.py::test_inspect_not_imported PASSED                        [  0%]
+test_pyfuncs.py::test_datetime_not_imported PASSED                       [  1%]
+test_pyfuncs.py::test_time_not_imported PASSED                           [  2%]
+test_pyfuncs.py::test_randint_not_imported PASSED                        [  3%]
+test_pyfuncs.py::test_requests_not_imported_dict PASSED                  [  4%]
+test_pyfuncs.py::test_requests_not_imported_else PASSED                  [  5%]
+test_pyfuncs.py::test_feet_2_meters_bad_value PASSED                     [  6%]
+test_pyfuncs.py::test_meters_2_feet_bad_value PASSED                     [  6%]
+test_pyfuncs.py::test_pounds_2_kilograms_bad_value PASSED                [  7%]
+test_pyfuncs.py::test_kilograms_2_pounds_bad_value PASSED                [  8%]
+test_pyfuncs.py::test_feet_2_meters_zero_value PASSED                    [  9%]
+test_pyfuncs.py::test_meters_2_feet_zero_value PASSED                    [ 10%]
+test_pyfuncs.py::test_pounds_2_kilograms_zero_value PASSED               [ 11%]
+test_pyfuncs.py::test_kilograms_2_pounds_zero_value PASSED               [ 12%]
+test_pyfuncs.py::test_feet_2_meters_large_value PASSED                   [ 13%]
+test_pyfuncs.py::test_meters_2_feet_large_value PASSED                   [ 13%]
+test_pyfuncs.py::test_pounds_2_kilograms_large_value PASSED              [ 14%]
+test_pyfuncs.py::test_kilograms_2_pounds_large_value PASSED              [ 15%]
+test_pyfuncs.py::test_feet_2_meters_small_value PASSED                   [ 16%]
+test_pyfuncs.py::test_meters_2_feet_small_value PASSED                   [ 17%]
+test_pyfuncs.py::test_pounds_2_kilograms_small_value PASSED              [ 18%]
+test_pyfuncs.py::test_kilograms_2_pounds_small_value PASSED              [ 19%]
+test_pyfuncs.py::test_add_bad_addend_x_value PASSED                      [ 20%]
+test_pyfuncs.py::test_add_bad_addend_y_value PASSED                      [ 20%]
+test_pyfuncs.py::test_add_mixed_float_01 PASSED                          [ 21%]
+test_pyfuncs.py::test_add_mixed_float_02 PASSED                          [ 22%]
+test_pyfuncs.py::test_add_mixed_int_01 PASSED                            [ 23%]
+test_pyfuncs.py::test_add_mixed_int_02 PASSED                            [ 24%]
+test_pyfuncs.py::test_add_negative_float_01 PASSED                       [ 25%]
+test_pyfuncs.py::test_add_negative_float_02 PASSED                       [ 26%]
+test_pyfuncs.py::test_add_negative_int_01 PASSED                         [ 26%]
+test_pyfuncs.py::test_add_negative_int_02 PASSED                         [ 27%]
+test_pyfuncs.py::test_add_positive_float_01 PASSED                       [ 28%]
+test_pyfuncs.py::test_add_positive_float_02 PASSED                       [ 29%]
+test_pyfuncs.py::test_add_positive_int_01 PASSED                         [ 30%]
+test_pyfuncs.py::test_add_positive_int_02 PASSED                         [ 31%]
+test_pyfuncs.py::test_divide_bad_dividend_value PASSED                   [ 32%]
+test_pyfuncs.py::test_divide_bad_divisor_value PASSED                    [ 33%]
+test_pyfuncs.py::test_divide_by_zero_float PASSED                        [ 33%]
+test_pyfuncs.py::test_divide_by_zero_int PASSED                          [ 34%]
+test_pyfuncs.py::test_divide_mixed_01 PASSED                             [ 35%]
+test_pyfuncs.py::test_divide_mixed_02 PASSED                             [ 36%]
+test_pyfuncs.py::test_divide_negatives PASSED                            [ 37%]
+test_pyfuncs.py::test_divide_positives PASSED                            [ 38%]
+test_pyfuncs.py::test_multiply_bad_multiplier_x_value PASSED             [ 39%]
+test_pyfuncs.py::test_multiply_bad_multiplican_y_value PASSED            [ 40%]
+test_pyfuncs.py::test_multiply_mixed_float_01 PASSED                     [ 40%]
+test_pyfuncs.py::test_multiply_mixed_float_02 PASSED                     [ 41%]
+test_pyfuncs.py::test_multiply_mixed_int_01 PASSED                       [ 42%]
+test_pyfuncs.py::test_multiply_mixed_int_02 PASSED                       [ 43%]
+test_pyfuncs.py::test_multiply_negative_float_01 PASSED                  [ 44%]
+test_pyfuncs.py::test_multiply_negative_float_02 PASSED                  [ 45%]
+test_pyfuncs.py::test_multiply_negative_int_01 PASSED                    [ 46%]
+test_pyfuncs.py::test_multiply_negative_int_02 PASSED                    [ 46%]
+test_pyfuncs.py::test_multiply_positive_float_01 PASSED                  [ 47%]
+test_pyfuncs.py::test_multiply_positive_float_02 PASSED                  [ 48%]
+test_pyfuncs.py::test_multiply_positive_int_01 PASSED                    [ 49%]
+test_pyfuncs.py::test_multiply_positive_int_02 PASSED                    [ 50%]
+test_pyfuncs.py::test_subtract_bad_minuend_x_value PASSED                [ 51%]
+test_pyfuncs.py::test_subtract_bad_subtrahend_y_value PASSED             [ 52%]
+test_pyfuncs.py::test_subtract_mixed_float_01 PASSED                     [ 53%]
+test_pyfuncs.py::test_subtract_mixed_float_02 PASSED                     [ 53%]
+test_pyfuncs.py::test_subtract_mixed_int_01 PASSED                       [ 54%]
+test_pyfuncs.py::test_subtract_mixed_int_02 PASSED                       [ 55%]
+test_pyfuncs.py::test_subtract_negative_float_01 PASSED                  [ 56%]
+test_pyfuncs.py::test_subtract_negative_float_02 PASSED                  [ 57%]
+test_pyfuncs.py::test_subtract_negative_int_01 PASSED                    [ 58%]
+test_pyfuncs.py::test_subtract_negative_int_02 PASSED                    [ 59%]
+test_pyfuncs.py::test_subtract_positive_float_01 PASSED                  [ 60%]
+test_pyfuncs.py::test_subtract_positive_float_02 PASSED                  [ 60%]
+test_pyfuncs.py::test_subtract_positive_int_01 PASSED                    [ 61%]
+test_pyfuncs.py::test_subtract_positive_int_02 PASSED                    [ 62%]
+test_pyfuncs.py::test_request_1_input PASSED                             [ 63%]
+test_pyfuncs.py::test_request_2_inputs PASSED                            [ 64%]
+test_pyfuncs.py::test_request_3_inputs PASSED                            [ 65%]
+test_pyfuncs.py::test_request_4_inputs PASSED                            [ 66%]
+test_pyfuncs.py::test_args_only PASSED                                   [ 66%]
+test_pyfuncs.py::test_args_and_default_kwargs PASSED                     [ 67%]
+test_pyfuncs.py::test_args_and_unique_kwargs PASSED                      [ 68%]
+test_pyfuncs.py::test_default_kwargs PASSED                              [ 69%]
+test_pyfuncs.py::test_unique_kwargs PASSED                               [ 70%]
+test_pyfuncs.py::test_printing_called_function_name_with_capsys PASSED   [ 71%]
+test_pyfuncs.py::test_printing_called_function_name_with_mocked_stdout PASSED [ 72%]
+test_pyfuncs.py::test_printing_called_function_name_with_normal_stdout PASSED [ 73%]
+test_pyfuncs.py::test_get_random_int PASSED                              [ 73%]
+test_pyfuncs.py::test_200_OK_get_joke_dict PASSED                        [ 74%]
+test_pyfuncs.py::test_200_OK_get_joke_else PASSED                        [ 75%]
+test_pyfuncs.py::test_301_get_joke_dict PASSED                           [ 76%]
+test_pyfuncs.py::test_301_get_joke_else PASSED                           [ 77%]
+test_pyfuncs.py::test_302_get_joke_dict PASSED                           [ 78%]
+test_pyfuncs.py::test_302_get_joke_else PASSED                           [ 79%]
+test_pyfuncs.py::test_401_get_joke_dict PASSED                           [ 80%]
+test_pyfuncs.py::test_401_get_joke_else PASSED                           [ 80%]
+test_pyfuncs.py::test_403_get_joke_dict PASSED                           [ 81%]
+test_pyfuncs.py::test_403_get_joke_else PASSED                           [ 82%]
+test_pyfuncs.py::test_404_get_joke_dict PASSED                           [ 83%]
+test_pyfuncs.py::test_404_get_joke_else PASSED                           [ 84%]
+test_pyfuncs.py::test_410_get_joke_dict PASSED                           [ 85%]
+test_pyfuncs.py::test_410_get_joke_else PASSED                           [ 86%]
+test_pyfuncs.py::test_500_get_joke_dict PASSED                           [ 86%]
+test_pyfuncs.py::test_500_get_joke_else PASSED                           [ 87%]
+test_pyfuncs.py::test_502_get_joke_dict PASSED                           [ 88%]
+test_pyfuncs.py::test_502_get_joke_else PASSED                           [ 89%]
+test_pyfuncs.py::test_503_get_joke_dict PASSED                           [ 90%]
+test_pyfuncs.py::test_503_get_joke_else PASSED                           [ 91%]
+test_pyfuncs.py::test_504_get_joke_dict PASSED                           [ 92%]
+test_pyfuncs.py::test_504_get_joke_else PASSED                           [ 93%]
+test_pyfuncs.py::test_len_joke_dict PASSED                               [ 93%]
+test_pyfuncs.py::test_len_joke_else PASSED                               [ 94%]
+test_pyfuncs.py::test_eb_time_local_zone_false PASSED                    [ 95%]
+test_pyfuncs.py::test_eb_time_utc_zone_false PASSED                      [ 96%]
+test_pyfuncs.py::test_eb_time_local_zone_true PASSED                     [ 97%]
+test_pyfuncs.py::test_eb_time_utc_zone_true PASSED                       [ 98%]
+test_pyfuncs.py::test_dt_weekend PASSED                                  [ 99%]
+test_pyfuncs.py::test_dt_weekday PASSED                                  [100%]
+
+==================================== PASSES ====================================
+__________________________ test_inspect_not_imported ___________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:38 GMT INFO:test_pyfuncs:'
+Test for a POTENTIAL missing 'inspect' import.
+
+INFO:pyfuncs:Executing: 'exercise_inspect'
+
+__________________________ test_datetime_not_imported __________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:38 GMT INFO:test_pyfuncs:'
+Test for a POTENTIAL missing 'datetime' import.
+
+INFO:pyfuncs:Executing: 'exercise_datetime'
+
+INFO:pyfuncs:
+day_name:Saturday day_num:6
+____________________________ test_time_not_imported ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:38 GMT INFO:test_pyfuncs:'
+Test for a POTENTIAL missing 'time' import.
+
+INFO:pyfuncs:Executing: 'exercise_time'
+
+INFO:pyfuncs:
+day_name:Saturday day_num:6
+__________________________ test_randint_not_imported ___________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:38 GMT INFO:test_pyfuncs:'
+Test for a POTENTIAL missing 'randint' import.
+
+INFO:pyfuncs:Executing: 'exercise_randint'
+
+_______________________ test_requests_not_imported_dict ________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:38 GMT INFO:test_pyfuncs:'
+Test for a POTENTIAL missing 'requests' import.
+INFO:pyfuncs:Executing: 'get_joke_dict'
+
+_______________________ test_requests_not_imported_else ________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:38 GMT INFO:test_pyfuncs:'
+Test for a POTENTIAL missing 'requests' import.
+INFO:pyfuncs:Executing: 'get_joke_else'
+
+_________________________ test_feet_2_meters_bad_value _________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_feet_2_meters_bad_value'
+INFO:pyfuncs:Executing: 'feet_2_meters'
+
+ERROR:pyfuncs:
+Invalid Foot Value == 'Invalid value for feet'
+_________________________ test_meters_2_feet_bad_value _________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_meters_2_feet_bad_value'
+INFO:pyfuncs:Executing: 'meters_2_feet'
+
+ERROR:pyfuncs:
+Invalid Meter Value == 'Invalid value for meters'
+______________________ test_pounds_2_kilograms_bad_value _______________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_pounds_2_kilograms_bad_value'
+INFO:pyfuncs:Executing: 'pounds_2_kilograms'
+
+ERROR:pyfuncs:
+Invalid Pound Value == 'Invalid value for pounds'
+______________________ test_kilograms_2_pounds_bad_value _______________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_kilograms_2_pounds_bad_value'
+INFO:pyfuncs:Executing: 'kilograms_2_pounds'
+
+ERROR:pyfuncs:
+Invalid Kilogram Value == 'Invalid value for kilograms'
+________________________ test_feet_2_meters_zero_value _________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_feet_2_meters_zero_value'
+
+INFO:pyfuncs:Executing: 'feet_2_meters'
+
+INFO:pyfuncs:
+0.00000' feet == '0.00000' meters
+Returning: '0.00000' meters
+________________________ test_meters_2_feet_zero_value _________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_meters_2_feet_zero_value'
+
+INFO:pyfuncs:Executing: 'meters_2_feet'
+
+INFO:pyfuncs:
+0.00000' meters == '0.00000, feet
+Returning: '0.00000' feet
+
+______________________ test_pounds_2_kilograms_zero_value ______________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_pounds_2_kilograms_zero_value'
+
+INFO:pyfuncs:Executing: 'pounds_2_kilograms'
+
+INFO:pyfuncs:
+0.00000' pounds == '0.00000' kilograms
+Returning: '0.00000' kilograms
+______________________ test_kilograms_2_pounds_zero_value ______________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_kilograms_2_pounds_zero_value'
+
+INFO:pyfuncs:Executing: 'kilograms_2_pounds'
+
+INFO:pyfuncs:
+0.00000' kilograms == '0.00000, pounds
+Returning: '0.00000' pounds
+
+________________________ test_feet_2_meters_large_value ________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_feet_2_meters_large_value'
+
+INFO:pyfuncs:Executing: 'feet_2_meters'
+
+INFO:pyfuncs:
+10000.00000' feet == '3048.00000' meters
+Returning: '3048.00000' meters
+________________________ test_meters_2_feet_large_value ________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_meters_2_feet_large_value'
+
+INFO:pyfuncs:Executing: 'meters_2_feet'
+
+INFO:pyfuncs:
+10000.00000' meters == '32808.40000, feet
+Returning: '32808.40000' feet
+
+_____________________ test_pounds_2_kilograms_large_value ______________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_pounds_2_kilograms_large_value'
+
+INFO:pyfuncs:Executing: 'pounds_2_kilograms'
+
+INFO:pyfuncs:
+10000.00000' pounds == '4535.92000' kilograms
+Returning: '4535.92000' kilograms
+_____________________ test_kilograms_2_pounds_large_value ______________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_kilograms_2_pounds_large_value'
+
+INFO:pyfuncs:Executing: 'kilograms_2_pounds'
+
+INFO:pyfuncs:
+10000.00000' kilograms == '22046.20000, pounds
+Returning: '22046.20000' pounds
+
+________________________ test_feet_2_meters_small_value ________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_feet_2_meters_small_value'
+
+INFO:pyfuncs:Executing: 'feet_2_meters'
+
+INFO:pyfuncs:
+1.00000' foot == '0.30480' meters
+Returning: '0.30480' meters
+________________________ test_meters_2_feet_small_value ________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_meters_2_feet_small_value'
+
+INFO:pyfuncs:Executing: 'meters_2_feet'
+
+INFO:pyfuncs:
+1.00000' meters == '3.28084, feet
+Returning: '3.28084' feet
+
+_____________________ test_pounds_2_kilograms_small_value ______________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_pounds_2_kilograms_small_value'
+
+INFO:pyfuncs:Executing: 'pounds_2_kilograms'
+
+INFO:pyfuncs:
+1.00000' pound == '0.45359' kilograms
+Returning: '0.45359' kilograms
+_____________________ test_kilograms_2_pounds_small_value ______________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_kilograms_2_pounds_small_value'
+
+INFO:pyfuncs:Executing: 'kilograms_2_pounds'
+
+INFO:pyfuncs:
+1.00000' kilogram == '2.20462, pounds
+Returning: '2.20462' pounds
+
+_________________________ test_add_bad_addend_x_value __________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_add_bad_addend_x_value'
+
+ERROR:pyfuncs:
+Invalid Addend X Value == 'a'
+_________________________ test_add_bad_addend_y_value __________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_add_bad_addend_y_value'
+
+ERROR:pyfuncs:
+Invalid Addend Y Value == 'b'
+___________________________ test_add_mixed_float_01 ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_add_mixed_float_01'
+
+___________________________ test_add_mixed_float_02 ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_add_mixed_float_02'
+
+____________________________ test_add_mixed_int_01 _____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_add_mixed_int_01'
+
+____________________________ test_add_mixed_int_02 _____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_add_mixed_int_02'
+
+__________________________ test_add_negative_float_01 __________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_add_negative_float_01'
+
+__________________________ test_add_negative_float_02 __________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_add_negative_float_02'
+
+___________________________ test_add_negative_int_01 ___________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_add_negative_int_01'
+
+___________________________ test_add_negative_int_02 ___________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_add_negative_int_02'
+
+__________________________ test_add_positive_float_01 __________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_add_positive_float_01'
+
+__________________________ test_add_positive_float_02 __________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_add_positive_float_02'
+
+___________________________ test_add_positive_int_01 ___________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_add_positive_int_01'
+
+___________________________ test_add_positive_int_02 ___________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_add_positive_int_02'
+
+________________________ test_divide_bad_dividend_value ________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_divide_bad_dividend_value'
+
+ERROR:pyfuncs:
+Invalid Dividend Value == 'a'
+________________________ test_divide_bad_divisor_value _________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_divide_bad_divisor_value'
+
+ERROR:pyfuncs:
+Invalid Divisor Value == 'b'
+__________________________ test_divide_by_zero_float ___________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_divide_by_zero_float'
+
+ERROR:pyfuncs:
+Invalid Divisor Value == '0.0'
+___________________________ test_divide_by_zero_int ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_divide_by_zero_int'
+
+ERROR:pyfuncs:
+Invalid Divisor Value == '0'
+_____________________________ test_divide_mixed_01 _____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_divide_mixed_01'
+
+_____________________________ test_divide_mixed_02 _____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_divide_mixed_02'
+
+____________________________ test_divide_negatives _____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_divide_negatives'
+
+____________________________ test_divide_positives _____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_divide_positives'
+
+_____________________ test_multiply_bad_multiplier_x_value _____________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_multiply_bad_multiplier_x_value'
+
+ERROR:pyfuncs:
+Invalid Multiplier X Value == 'a'
+____________________ test_multiply_bad_multiplican_y_value _____________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_multiply_bad_multiplican_y_value'
+
+ERROR:pyfuncs:
+Invalid Multiplican Y Value == 'b'
+_________________________ test_multiply_mixed_float_01 _________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_multiply_mixed_float_01'
+
+_________________________ test_multiply_mixed_float_02 _________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_multiply_mixed_float_02'
+
+__________________________ test_multiply_mixed_int_01 __________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_multiply_mixed_int_01'
+
+__________________________ test_multiply_mixed_int_02 __________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_multiply_mixed_int_02'
+
+_______________________ test_multiply_negative_float_01 ________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_multiply_negative_float_01'
+
+_______________________ test_multiply_negative_float_02 ________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_multiply_negative_float_02'
+
+________________________ test_multiply_negative_int_01 _________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_multiply_negative_int_01'
+
+________________________ test_multiply_negative_int_02 _________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_multiply_negative_int_02'
+
+_______________________ test_multiply_positive_float_01 ________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_multiply_positive_float_01'
+
+_______________________ test_multiply_positive_float_02 ________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_multiply_positive_float_02'
+
+________________________ test_multiply_positive_int_01 _________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_multiply_positive_int_01'
+
+________________________ test_multiply_positive_int_02 _________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_multiply_positive_int_02'
+
+______________________ test_subtract_bad_minuend_x_value _______________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_subtract_bad_minuend_x_value'
+
+ERROR:pyfuncs:
+Invalid Minuend X Value == 'a'
+_____________________ test_subtract_bad_subtrahend_y_value _____________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_subtract_bad_subtrahend_y_value'
+
+ERROR:pyfuncs:
+Invalid Subtrahend Y Value == 'b'
+_________________________ test_subtract_mixed_float_01 _________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_subtract_mixed_float_01'
+
+_________________________ test_subtract_mixed_float_02 _________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_subtract_mixed_float_02'
+
+__________________________ test_subtract_mixed_int_01 __________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_subtract_mixed_int_01'
+
+__________________________ test_subtract_mixed_int_02 __________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_subtract_mixed_int_02'
+
+_______________________ test_subtract_negative_float_01 ________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_subtract_negative_float_01'
+
+_______________________ test_subtract_negative_float_02 ________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_subtract_negative_float_02'
+
+________________________ test_subtract_negative_int_01 _________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_subtract_negative_int_01'
+
+________________________ test_subtract_negative_int_02 _________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_subtract_negative_int_02'
+
+_______________________ test_subtract_positive_float_01 ________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_subtract_positive_float_01'
+
+_______________________ test_subtract_positive_float_02 ________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_subtract_positive_float_02'
+
+________________________ test_subtract_positive_int_01 _________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_subtract_positive_int_01'
+
+________________________ test_subtract_positive_int_02 _________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_subtract_positive_int_02'
+
+_____________________________ test_request_1_input _____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_request_1_input'
+
+INFO:pyfuncs:Executing: 'request_input'
+INFO:pyfuncs:
+Returning Input String:
+q
+____________________________ test_request_2_inputs _____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_request_2_inputs'
+
+INFO:pyfuncs:Executing: 'request_input'
+You entered '222'
+INFO:pyfuncs:
+Returning Input String:
+222
+____________________________ test_request_3_inputs _____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_request_3_inputs'
+
+INFO:pyfuncs:Executing: 'request_input'
+You entered '222'
+You entered '333'
+INFO:pyfuncs:
+Returning Input String:
+333
+____________________________ test_request_4_inputs _____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_request_4_inputs'
+
+INFO:pyfuncs:Executing: 'request_input'
+You entered '222'
+You entered '333'
+You entered '444'
+INFO:pyfuncs:
+Returning Input String:
+444
+________________________________ test_args_only ________________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_args_only'
+
+Executing Function: 'return_args_only'
+
+INFO:pyfuncs:
+Returning args:
+"['parg_one', 'parg_two', 'parg_three']"
+_________________________ test_args_and_default_kwargs _________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_args_and_default_kwargs'
+
+Executing Function: 'return_args_and_kwargs'
+
+INFO:pyfuncs:
+Returning args:
+"['parg_one', 'parg_two', 'parg_three']"
+
+Returning kwargs:
+"{'named1': 'n_one', 'named2': 'n_two', 'named3': 'n_three'}"
+_________________________ test_args_and_unique_kwargs __________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_args_and_unique_kwargs'
+
+Executing Function: 'return_args_and_kwargs'
+
+INFO:pyfuncs:
+Returning args:
+"['parg_one', 'parg_two', 'parg_three']"
+
+Returning kwargs:
+"{'named1': 'n_one_unique', 'named2': 'n_two_unique', 'named3': 'n_three_unique'}"
+_____________________________ test_default_kwargs ______________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_default_kwargs'
+
+Executing Function: 'return_kwargs_only'
+
+INFO:pyfuncs:
+Returning kwargs:
+"{'named1': 'n_one', 'named2': 'n_two', 'named3': 'n_three'}"
+______________________________ test_unique_kwargs ______________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_unique_kwargs'
+
+Executing Function: 'return_kwargs_only'
+
+INFO:pyfuncs:
+Returning kwargs:
+"{'named1': 'n_one_unique', 'named2': 'n_two_unique', 'named3': 'n_three_unique'}"
+________________ test_printing_called_function_name_with_capsys ________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_printing_called_function_name_with_capsys'
+
+____________ test_printing_called_function_name_with_mocked_stdout _____________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_printing_called_function_name_with_mocked_stdout'
+
+____________ test_printing_called_function_name_with_normal_stdout _____________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_printing_called_function_name_with_normal_stdout'
+
+Executing Function: 'printing_the_name_of_this_function'
+_____________________________ test_get_random_int ______________________________
+----------------------------- Captured stdout call -----------------------------
+INFO:pyfuncs:Executing: 'get_random_int'
+
+INFO:pyfuncs:
+begin: '2' bookend: '22' modifier: '5' roll: '7'
+ return value  == roll + modifier
+'get_random_int' returning'12'
+__________________________ test_200_OK_get_joke_dict ___________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_200_OK_get_joke_dict'
+
+INFO:pyfuncs:Executing: 'get_joke_dict'
+
+__________________________ test_200_OK_get_joke_else ___________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_200_OK_get_joke_else'
+
+INFO:pyfuncs:Executing: 'get_joke_else'
+
+____________________________ test_301_get_joke_dict ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_301_get_joke_dict'
+
+INFO:pyfuncs:Executing: 'get_joke_dict'
+
+____________________________ test_301_get_joke_else ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_301_get_joke_else'
+
+INFO:pyfuncs:Executing: 'get_joke_else'
+
+____________________________ test_302_get_joke_dict ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_302_get_joke_dict'
+
+INFO:pyfuncs:Executing: 'get_joke_dict'
+
+____________________________ test_302_get_joke_else ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_302_get_joke_else'
+
+INFO:pyfuncs:Executing: 'get_joke_else'
+
+____________________________ test_401_get_joke_dict ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_401_get_joke_dict'
+
+INFO:pyfuncs:Executing: 'get_joke_dict'
+
+____________________________ test_401_get_joke_else ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_401_get_joke_else'
+
+INFO:pyfuncs:Executing: 'get_joke_else'
+
+____________________________ test_403_get_joke_dict ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_403_get_joke_dict'
+
+INFO:pyfuncs:Executing: 'get_joke_dict'
+
+____________________________ test_403_get_joke_else ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_403_get_joke_else'
+
+INFO:pyfuncs:Executing: 'get_joke_else'
+
+____________________________ test_404_get_joke_dict ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_404_get_joke_dict'
+
+INFO:pyfuncs:Executing: 'get_joke_dict'
+
+____________________________ test_404_get_joke_else ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_404_get_joke_else'
+
+INFO:pyfuncs:Executing: 'get_joke_else'
+
+____________________________ test_410_get_joke_dict ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_410_get_joke_dict'
+
+INFO:pyfuncs:Executing: 'get_joke_dict'
+
+____________________________ test_410_get_joke_else ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_410_get_joke_else'
+
+INFO:pyfuncs:Executing: 'get_joke_else'
+
+____________________________ test_500_get_joke_dict ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_500_get_joke_dict'
+
+INFO:pyfuncs:Executing: 'get_joke_dict'
+
+____________________________ test_500_get_joke_else ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_500_get_joke_else'
+
+INFO:pyfuncs:Executing: 'get_joke_else'
+
+____________________________ test_502_get_joke_dict ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_502_get_joke_dict'
+
+INFO:pyfuncs:Executing: 'get_joke_dict'
+
+____________________________ test_502_get_joke_else ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_502_get_joke_else'
+
+INFO:pyfuncs:Executing: 'get_joke_else'
+
+____________________________ test_503_get_joke_dict ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_503_get_joke_dict'
+
+INFO:pyfuncs:Executing: 'get_joke_dict'
+
+____________________________ test_503_get_joke_else ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_503_get_joke_else'
+
+INFO:pyfuncs:Executing: 'get_joke_else'
+
+____________________________ test_504_get_joke_dict ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_504_get_joke_dict'
+
+INFO:pyfuncs:Executing: 'get_joke_dict'
+
+____________________________ test_504_get_joke_else ____________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_504_get_joke_else'
+
+INFO:pyfuncs:Executing: 'get_joke_else'
+
+______________________________ test_len_joke_dict ______________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_len_joke_dict'
+
+INFO:pyfuncs:
+Mocked Joke string:
+'Substitute this return string for the URL return when'get_joke_disc()' is called'
+______________________________ test_len_joke_else ______________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:Executing: 'test_len_joke_else'
+
+INFO:pyfuncs:
+Mocked Joke string:
+'Substitute this return string for the URL return when'get_joke_else()' is called'
+________________________ test_eb_time_local_zone_false _________________________
+----------------------------- Captured stdout call -----------------------------
+INFO:pyfuncs:
+Date, Time and Zone:
+2023-11-18 21:57:39 UTC
+_________________________ test_eb_time_utc_zone_false __________________________
+----------------------------- Captured stdout call -----------------------------
+INFO:pyfuncs:
+Date, Time and Zone:
+2023-11-18 21:57:39 GMT
+_________________________ test_eb_time_local_zone_true _________________________
+----------------------------- Captured stdout call -----------------------------
+INFO:pyfuncs:
+Date, Time, Zone and Offset:
+2023-11-18 21:57:39 UTC +0000
+__________________________ test_eb_time_utc_zone_true __________________________
+----------------------------- Captured stdout call -----------------------------
+INFO:pyfuncs:
+Date, Time, Zone and Offset:
+2023-11-18 21:57:39 GMT +0000
+_______________________________ test_dt_weekend ________________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:
+'datetime' days (Sun == Zero) - (Sat == Six)
+
+INFO:pyfuncs:
+'datetime' days (Sun == Zero) - (Sat == Six)
+INFO:pyfuncs:Date and Time:
+2018-10-06 00:00:00 
+INFO:pyfuncs:'display_name_weekend' 6, Day of the weekend == Saturday
+INFO:pyfuncs:flag_weekday == False
+
+INFO:pyfuncs:
+'datetime' days (Sun == Zero) - (Sat == Six)
+INFO:pyfuncs:Date and Time:
+2018-10-07 00:00:00 
+INFO:pyfuncs:'display_name_weekend' 0, Day of the weekend == Sunday
+INFO:pyfuncs:flag_weekday == False
+_______________________________ test_dt_weekday ________________________________
+----------------------------- Captured stdout call -----------------------------
+2023-11-18 21:57:39 GMT INFO:test_pyfuncs:
+'datetime' days (Sun == Zero) - (Sat == Six)
+
+INFO:pyfuncs:
+'datetime' days (Sun == Zero) - (Sat == Six)
+INFO:pyfuncs:Date and Time:
+2018-10-01 00:00:00 
+INFO:pyfuncs:'display_name_weekday' 1, Day of the week == Monday
+INFO:pyfuncs:flag_weekday == True
+
+INFO:pyfuncs:
+'datetime' days (Sun == Zero) - (Sat == Six)
+INFO:pyfuncs:Date and Time:
+2018-10-02 00:00:00 
+INFO:pyfuncs:'display_name_weekday' 2, Day of the week == Tuesday
+INFO:pyfuncs:flag_weekday == True
+
+INFO:pyfuncs:
+'datetime' days (Sun == Zero) - (Sat == Six)
+INFO:pyfuncs:Date and Time:
+2018-10-03 00:00:00 
+INFO:pyfuncs:'display_name_weekday' 3, Day of the week == Wednesday
+INFO:pyfuncs:flag_weekday == True
+
+INFO:pyfuncs:
+'datetime' days (Sun == Zero) - (Sat == Six)
+INFO:pyfuncs:Date and Time:
+2018-10-04 00:00:00 
+INFO:pyfuncs:'display_name_weekday' 4, Day of the week == Thursday
+INFO:pyfuncs:flag_weekday == True
+
+INFO:pyfuncs:
+'datetime' days (Sun == Zero) - (Sat == Six)
+INFO:pyfuncs:Date and Time:
+2018-10-05 00:00:00 
+INFO:pyfuncs:'display_name_weekday' 5, Day of the week == Friday
+INFO:pyfuncs:flag_weekday == True
+============================= 115 passed in 1.74s ==============================

@@ -1,0 +1,65 @@
+Name: pip
+Version: 23.2.1
+Summary: The PyPA recommended tool for installing Python packages.
+Home-page: https://pip.pypa.io/
+Author: The pip developers
+Author-email: distutils-sig@python.org
+License: MIT
+Location: /usr/lib/python3.12/site-packages
+Requires: 
+Required-by: 
+---
+Name: boto3
+Version: 1.29.3
+Summary: The AWS SDK for Python
+Home-page: https://github.com/boto/boto3
+Author: Amazon Web Services
+Author-email: 
+License: Apache License 2.0
+Location: /usr/local/lib/python3.12/site-packages
+Requires: botocore, jmespath, s3transfer
+Required-by: 
+---
+Name: botocore
+Version: 1.32.3
+Summary: Low-level, data-driven core of boto 3.
+Home-page: https://github.com/boto/botocore
+Author: Amazon Web Services
+Author-email: 
+License: Apache License 2.0
+Location: /usr/local/lib/python3.12/site-packages
+Requires: jmespath, python-dateutil, urllib3
+Required-by: boto3, s3transfer
+---
+Name: flake8
+Version: 6.1.0
+Summary: the modular source code checker: pep8 pyflakes and co
+Home-page: https://github.com/pycqa/flake8
+Author: Tarek Ziade
+Author-email: tarek@ziade.org
+License: MIT
+Location: /usr/local/lib/python3.12/site-packages
+Requires: mccabe, pycodestyle, pyflakes
+Required-by: 
+---
+Name: pytest
+Version: 7.4.3
+Summary: pytest: simple powerful testing with Python
+Home-page: https://docs.pytest.org/en/latest/
+Author: Holger Krekel, Bruno Oliveira, Ronny Pfannschmidt, Floris Bruynooghe, Brianna Laugher, Florian Bruhin and others
+Author-email: 
+License: MIT
+Location: /usr/local/lib/python3.12/site-packages
+Requires: iniconfig, packaging, pluggy
+Required-by: 
+---
+Name: requests
+Version: 2.31.0
+Summary: Python HTTP for Humans.
+Home-page: https://requests.readthedocs.io
+Author: Kenneth Reitz
+Author-email: me@kennethreitz.org
+License: Apache 2.0
+Location: /usr/local/lib/python3.12/site-packages
+Requires: certifi, charset-normalizer, idna, urllib3
+Required-by: 

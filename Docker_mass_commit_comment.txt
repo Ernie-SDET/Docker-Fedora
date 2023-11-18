@@ -1,0 +1,9 @@
+"
+File 'log-git-fedora-build.txt' contains uncached 'docker build' output.
+
+A Dockerfile configured to create a ‘git-fedora’ based image ‘pip3’ installed ‘boto3’, ‘botocore’, ‘flake8’, ‘pytest’ and ‘requests’ after installing ‘git’ and ‘python3-pip’. It also copied a python module to be tested, a ‘pytest’ script and a 'vi' configuration file that understands both python and yaml syntax.
+
+File 'git-fedora-Pip3Boto3versions.txt' contains A log of modules installed via 'pip3 install'
+
+File 'git-fedora-pytest-results.txt' is a log produced by 'pytest test_pyfuncs.py' automated execution of more than one hundred tests against functions in 'pyfuncs.py', the module under test.
+"
